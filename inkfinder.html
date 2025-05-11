@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InkFinder - Encontre seu Estúdio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .bg-gradient {
+      background: linear-gradient(135deg, #1f1f2f, #2e2e48);
+    }
+    .highlight {
+      color: #9f7aea;
+    }
+    .search-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient text-white">
+  <header class="p-6 shadow-md bg-black bg-opacity-30 backdrop-blur">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold transition-transform duration-300 hover:scale-110 text-white">
+        Ink<span class="highlight">Finder</span>
+      </h1>
+      <nav class="space-x-4">
+        <a href="inkmaster.html" class="text-white hover:text-purple-400">Voltar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-16 px-4 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 text-center">Encontre o <span class="highlight">Estúdio</span> ideal para você</h2>
+    <div class="bg-black bg-opacity-30 backdrop-blur p-6 rounded-xl shadow-lg mb-10">
+      <form class="grid md:grid-cols-4 gap-4 search-wrapper">
+        <input type="text" name="busca" placeholder="Buscar por cidade, nome..." class="px-4 py-2 rounded-md bg-[#2e2e48] text-white w-full" />
+        <select name="ordenar" class="px-4 py-2 rounded-md bg-[#2e2e48] text-white w-full">
+          <option>Ordenar por</option>
+          <option value="relevancia">Relevância</option>
+          <option value="avaliados">Melhor Avaliados</option>
+          <option value="proximos">Mais Próximos</option>
+          <option value="menor_preco">Menor Preço</option>
+          <option value="maior_preco">Maior Preço</option>
+        </select>
+        <select name="servico" class="px-4 py-2 rounded-md bg-[#2e2e48] text-white w-full">
+          <option>Tipo de serviço</option>
+          <option value="tatuagem">Tatuagem</option>
+          <option value="piercing">Piercing</option>
+        </select>
+        <select name="preco" class="px-4 py-2 rounded-md bg-[#2e2e48] text-white w-full">
+          <option>Faixa de preço</option>
+          <option value="menos_100">Abaixo de R$200</option>
+          <option value="100_300">R$200 a R$900</option>
+          <option value="mais_300">Acima de R$1200</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <a href="inkstudio.html" class="block bg-[#1f1f2f] p-6 rounded-xl shadow-md hover:shadow-purple-600 transition">
+        <img src="images\studioziel.jpg" alt="Studio Tattoo" class="rounded-md mb-4">
+        <h3 class="text-2xl font-semibold highlight">Studio Ziel Tattoo</h3>
+        <p class="text-gray-300">Franca - SP</p>
+        <div class="mt-2 text-yellow-400">★★★★★ (257 avaliações)</div>
+        <p class="mt-2 text-purple-400 font-bold">A partir de R$ 150</p>
+      </a>
+
+      <a href="studio-page.html" class="block bg-[#1f1f2f] p-6 rounded-xl shadow-md hover:shadow-purple-600 transition">
+        <img src="images/urban.jpg"   alt="Studio Tattoo" class="rounded-md mb-4">
+        <h3 class="text-2xl font-semibold highlight">Urban Skull</h3>
+        <p class="text-gray-300">São Paulo - SP</p>
+        <div class="mt-2 text-yellow-400">★★★ (98 avaliações)</div>
+        <p class="mt-2 text-purple-400 font-bold">A partir de R$ 800</p>
+      </a>
+
+      <a href="studio-page.html" class="block bg-[#1f1f2f] p-6 rounded-xl shadow-md hover:shadow-purple-600 transition">
+        <img src="images/davi.jpeg" class="rounded-md mb-4">
+        <h3 class="text-2xl font-semibold highlight">Davi Studio</h3>
+        <p class="text-gray-300">Curitiba - PR</p>
+        <div class="mt-2 text-yellow-400">★★☆ (245 avaliações)</div>
+        <p class="mt-2 text-purple-400 font-bold">A partir de R$ 1200</p>
+      </a>
+    </div>
+  </main>
+
+  <footer class="bg-black bg-opacity-30 backdrop-blur py-8 text-center">
+    <p class="text-gray-400">&copy; 2025 InkFinder - Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
